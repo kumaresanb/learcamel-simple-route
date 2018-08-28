@@ -7,7 +7,7 @@ public class SampleDirectRoute extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 				from("direct:sampleInput")
-				.log("Recieved Messge is ${body} and Headers are ${headers}")
+				.log("Recevied Messge is ${body} and Headers are ${headers}")
 				.to("file:sampleOutput?fileName=output.txt");
 		}
 
